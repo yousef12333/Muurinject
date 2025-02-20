@@ -1,0 +1,221 @@
+.encompassPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;
+    justify-items: center;
+    padding-left: 15rem; 
+    padding-right: 15rem;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.content-container {
+    display: flex;
+}
+
+.service-image {
+    width: 100%;
+    height: 100%; 
+    max-height: 35rem;
+    min-height: 20rem;
+}
+
+
+
+h5 {
+    line-height: 1.7;
+}
+
+.button {
+    padding: 1rem 2rem;
+    border: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    z-index: 1; 
+    color: rgb(255, 93, 98);
+    background-color: rgb(7, 87, 159); 
+}
+
+.contactInfo{
+   padding:2rem;
+   background: linear-gradient(40deg, rgb(7, 88, 159), rgba(7, 118, 159));
+    padding-bottom: 3rem;
+    box-shadow: 0rem 0.8rem 0.2rem 0.3rem rgb(0 0 0 / 48%)
+}
+.button:hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease, width 0.3s ease; 
+    color: rgb(7, 87, 159); 
+    background-color: rgb(255, 93, 98);
+    
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 0.5em;
+    color: rgb(7, 87, 159);
+    font-weight: bold;
+}
+
+
+li > a, #telephoneContact, #times {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    font-size: 0.85rem;
+    
+}
+a:hover{
+    color: rgb(255, 93, 98);
+
+}
+i {
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    color: rgb(7, 87, 159); 
+    font-size: 1.2em;
+    margin-right: 0.3em;
+    font-weight: bold;
+    background-color: white;
+    height:2rem;
+    width:2rem;
+    border: white 1rem bold;
+    border-radius: 50%;
+}
+#ulContact>li>a:hover i{
+    color: rgb(255, 93, 98);
+    transform: scale(1.1);
+}
+.title, #ulContact, #telephoneContact, #times {
+    position: relative;
+    z-index: 2;
+}
+h2 {
+    color: white;
+    font-weight: bold;
+}
+.be{
+    color: white;
+}
+#ulContact{
+    text-align:left;
+    color: white;
+    margin-top:1rem;
+    line-height: 2;
+    margin-left:-2rem;
+}
+#ulContact>li>a{
+    justify-content: flex-start;
+    color: white;
+}
+#ulContact>li>a:hover{
+    color: rgb(255, 93, 98);
+}
+#map { height: 25rem; }
+@media (max-width: 1100px) {
+
+    .encompassPage {
+        display: flex; 
+        flex-direction: column; 
+        padding: 0vw 5vw 0vw 5vw;
+    }
+    
+    .contactInfo {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .encompassPage + .contactInfo {
+        margin-top: 1rem;
+    }
+    .button {
+      margin-left: 0;
+      font-size: 1.1rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .parallaxDiv {
+      padding-top: 4rem;
+      grid-template-rows: 3.5rem 2.5rem 3rem;
+    }
+  
+    .buttonParallax {
+      width: 60vw;
+      height: 2.8rem;
+    }
+  
+    .titleName {
+      font-size: 2rem;
+    }
+  
+    .extraText {
+      font-size: 1rem;
+    }
+  
+  
+    .carousel {
+      padding: 5rem 10vw 2rem 10vw;
+    }
+  
+  }
+  @media(max-width:500px){
+    h5{
+        font-size:4vw;
+    }
+  }
+  
+@media(max-width:400px){
+
+    p.slide-text{
+        font-size: 4vw;
+    }
+    .slider-title{
+      font-size:8vw;
+    }
+    .titleName{
+      font-size: 10vw;
+    }
+    .extraText{
+      font-size: 4vw;
+    }
+    .buttonParallax{
+      font-size: 4vw;
+    }
+    h5{
+        font-size:5vw;
+    }
+    li > a, #telephoneContact, #times {
+
+      font-size: 4vw;
+      
+  }
+  i{
+    height: 4vh;
+    width: 6.3vw;
+  }
+  .title{
+    font-size: 8vw;
+  }
+  .contactInfo{
+    padding: 2rem 0rem 0rem 2rem;
+  }
+  }
+  @media(max-width:250px){
+    h5{
+        font-size:6vw;
+    }
+    .contactInfo{
+      padding: 1rem 0rem 0rem 1rem;
+    }
+    i{
+      height: 4vh;
+      width: 10vw;
+    }
+    .buttonParallax{
+      font-size: 3.9vw;
+    }
+  }

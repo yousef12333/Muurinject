@@ -1,0 +1,280 @@
+.button {
+    position:relative;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: transparent;
+    font-size: 1.3rem;
+    font-weight:500;
+    margin-top: 1rem;
+    z-index: 1; 
+    color: rgb(255, 93, 98);
+    background-color: rgb(7, 87, 159); 
+    margin-left: 3rem
+    
+}
+
+.appSquare{
+    max-height: 5rem;
+}
+.button:hover{
+    cursor: pointer;
+    transition: background-color 0.3s ease, width 0.3s ease; 
+    color: rgb(7, 87, 159); 
+    background-color: rgb(255, 93, 98);
+    
+    
+}
+.parallaxDiv{
+    z-index: 3;
+    display:grid;
+    grid-template-rows: 4.5rem 3rem 4rem;
+    padding-top: 8rem;
+    align-items: start;
+    justify-content: center;
+    justify-items: center;
+}
+.buttonParallax{
+    width: 15vw;
+    height: 3.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: transparent;
+    font-size: 1.3rem;
+    font-weight:500;
+    color: rgb(7, 87, 159);
+    background-color: rgb(255, 93, 98);
+    grid-row: 3/4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.buttonParallax:hover{
+    width: 15vw;
+    height: 3.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: transparent;
+    font-size: 1.3rem;
+    font-weight:500;
+    color: white;
+    border: 1px solid white;
+    transition: background-color 0.3s ease, width 0.3s ease; 
+    background-color: transparent;
+    grid-row: 3/4;
+}
+.titleName{
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  grid-row: 1/2;
+}
+  .extraText{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 100;
+    grid-row: 2/3;
+  }
+
+
+.alignBottom {
+    align-content: end;
+    grid-row: 3/4;
+}
+.slide-text{
+  width:70%;
+}
+.slider-title {
+  text-align: center;
+ margin-bottom: -3rem;
+ margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(7, 87, 159);
+}
+.inbetween{
+  
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -0.3rem;
+  position: relative; 
+  overflow: hidden; 
+}
+.inbetween::before {
+  content: '';
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 236, 236, 0.86);
+  z-index: 1; 
+}
+
+.inbetween * {
+  position: relative; 
+  z-index: 2; 
+}
+swiper-container{
+  margin-bottom: 5rem;
+}
+.carousel {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 36vw 2rem 36vw;
+  position: relative;
+}
+
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.swiper-pagination-bullet {
+  background-color: rgb(7, 87, 159);
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 1fr;
+  padding: 10px;
+  background-color: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.slide-content:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+.slide-image {
+  width: 15vh;
+  height: auto;
+  max-height: 10rem;
+  max-width: 5rem;
+}
+#underlineTitle{
+  display:flex;
+  background-color: rgb(7, 87, 159);
+  height: 0.3rem;
+  width: 2rem;
+  align-content: center;
+  margin: 0.6rem;
+}
+.slide-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: rgb(7, 87, 159);
+  color: rgb(255, 93, 98);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.slide-button:hover {
+  background-color: rgb(255, 93, 98);
+  color: rgb(7, 87, 159);;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(7, 87, 159);
+}
+
+.swiper-pagination {
+  color: rgb(7, 87, 159);
+}
+@media (max-width: 1500px) {
+  .carousel{
+    padding: 5rem 30vw 2rem 30vw;
+  }
+}
+@media (max-width: 900px) {
+
+
+  .button {
+    margin-left: 0;
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .parallaxDiv {
+    padding-top: 8rem; 
+  }
+
+  .buttonParallax {
+    width: 60vw;
+    height: 2.8rem;
+    
+  }
+ 
+  .titleName {
+    font-size: 6vw;
+  }
+  
+  .extraText {
+    font-size: 1rem;
+  }
+  .page-banner{
+    background-size: 115% 70%;
+  }
+
+  .carousel {
+    padding: 5rem 10vw 2rem 10vw;
+  }
+
+}
+@media(max-width:700px){
+  .titleName {
+    font-size: 8vw;
+  }
+}
+@media(max-width:500px){
+  h5{
+      font-size:4vw;
+  }
+  .titleName {
+    font-size: 10vw;
+  }
+}
+
+@media(max-width:400px){
+
+  p.slide-text{
+      font-size: 4vw;
+  }
+  .slider-title{
+    font-size:8vw;
+  }
+  .titleName{
+    font-size: 10vw;
+    top:2rem;
+    position:relative;
+  }
+  .extraText{
+    font-size: 4vw;
+    
+  }
+  .buttonParallax{
+    font-size: 4vw;
+  }
+  h5{
+      font-size:5vw;
+  }
+}
+
+@media(max-width:250px){
+  h5{
+      font-size:6vw;
+  }
+  .buttonParallax{
+    font-size: 3.9vw;
+  }
+}
