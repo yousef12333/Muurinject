@@ -1,5 +1,5 @@
 img {
-    width: 7em; 
+    width: 6em; 
     cursor: pointer;
     margin: 0.51em 0.5em 0.5em 0em;
 }
@@ -70,6 +70,7 @@ nav a:hover {
     background-color: rgba(211, 216, 221, 0.6); 
     transform: scale(1.05); 
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    color: rgb(53,96,147)
 }
 
 @media (max-width: 900px) {

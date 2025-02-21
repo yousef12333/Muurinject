@@ -6,11 +6,12 @@ import { ServicesComponent } from "./services/services.component";
 import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./footer/footer.component";
 import { WorkingMethodComponent } from "./working-method/working-method.component";
+import { SquareComponent } from './square/square.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, HomeComponent, ServicesComponent, ContactComponent, FooterComponent, WorkingMethodComponent],
+  imports: [RouterOutlet, HeaderComponent, HomeComponent, ServicesComponent, ContactComponent, FooterComponent, WorkingMethodComponent, SquareComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
