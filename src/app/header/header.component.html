@@ -4,14 +4,14 @@
             <ul>
                 <li id="firstEle">
                     <a href="tel:+32471625028">
-                        <i class="bi bi-telephone"></i> +32471625028
+                        <i class="bi bi-telephone-fill"></i> +32 471 62 50 28
                     </a>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="mailto:Elias_bouki@hotmail.com">
-                        <i class="bi bi-envelope"></i>Elias_bouki&#64;hotmail.com
+                    <a href="mailto:Muurinject@gmail.com">
+                        <i class="bi bi-envelope-fill"></i>Muurinject&#64;gmail.com
                     </a>
                 </li>
             </ul>
@@ -20,12 +20,19 @@
     
     <header id="headerBottom">
         <a class="button" id="linkImg">
-            <img src="Muurinject_Logo.png" alt="Logo_Muurinject">
+            <img src="Muurinject_Logo.png" alt="Logo_Muurinject" data-value="" (click)="regularNavigate($event)">
         </a>
         <nav>
-            <a class="button" href="#services">Diensten</a>
-            <a class="button" href="#working-method">De werkwijze</a>
-            <a class="button" href="#contact">Contact</a>
+            <div class="dropdown-container">
+                <select name="services" id="servicesDropdown" [(ngModel)]="selectedService" (change)="navigate($event)">
+                    <option value="" disabled hidden #firstOption>Diensten</option>
+                    <option value="wall-inject">Muur injecteren</option>
+                    <option value="cellar-treatment">Kelderbehandeling</option>
+                    <option value="wall-impregnation">Muren impregneren</option>
+                    <option value="damp-proofing">Condens- en schimmelbestrijding</option>
+                </select>
+            </div>
+            <a class="button" data-value="contact" (click)="regularNavigate($event)">Contact</a>
         </nav>
         
     </header>

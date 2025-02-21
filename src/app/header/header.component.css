@@ -1,27 +1,92 @@
 img {
     width: 6em; 
     cursor: pointer;
-    margin: 0.51em 0.5em 0.5em 0em;
+    margin: 0.5em 0.5em 0.5em 0.8em;
 }
 
+#headerTop, #headerBottom{
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
 #headerTop {
-    background-color: rgb(211,216,221);
+    background-color: rgba(211, 216, 221, 0.3);
+    padding-bottom: 0;
 }
-
+#headerBottom {
+    display: flex; 
+    align-items: flex-end; 
+    justify-content: space-between; 
+    border-bottom: 2px solid rgb(36,53,79);
+    margin-bottom: -5px;
+    align-items: center;
+}
 #contactHeader {
     display: flex;
     margin-left: 1em;
     cursor: pointer;
 }
+#servicesDropdown {
+    color: rgb(36, 53, 79);
+    background-color: transparent;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border:none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    margin-right: 1rem;
+    border: none; 
+    width: 8em;
+    transition: all 0.3s ease;
+    white-space: wrap;
+    overflow: hidden;
+
+}
+
+#servicesDropdown:hover {
+    transform: scale(1.10);
+    color: rgb(53, 96, 147);
+}
+
+#servicesDropdown:focus {
+    outline: none;
+    color: rgb(53, 96, 147);
+}
+
+#servicesDropdown::after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(36, 53, 79);
+    font-size: 1.2em;
+    pointer-events: none;
+}
+
+#servicesDropdown option {
+    background-color: white;
+    color: rgb(36, 53, 79);
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#servicesDropdown option:hover {
+    background-color: rgba(211, 216, 221, 0.6); 
+    color: rgb(53, 96, 147);  
+}
 
 #linkImg {
-    margin-left: 2em;
+    margin-left: 2vw;
 }
 
 li {
     list-style-type: none;
     text-decoration: none;
     margin-top: 0.5em;
+    font-size: 0.9rem;
 }
 
 li > a {
@@ -32,32 +97,30 @@ li > a {
     align-items: center;
     
 }
-
+li>a:hover{
+    color: rgb(53, 96, 147);
+}
 i {
-    color: rgb(36,53,79);;
+    color: rgb(12, 35, 180);
     font-size: 1.2em;
     margin-right: 0.3em;
 }
 
-#headerBottom {
-    display: flex; 
-    align-items: flex-end; 
-    justify-content: space-between; 
-    padding: 0px 20px; 
-    border-bottom: 2px solid rgb(36,53,79);
-    margin-bottom: -5px;
-}
+
 
 nav {
     margin-right: 3em;
     display: flex; 
     align-items: flex-end; 
 }
-
+nav a, #servicesDropdown{
+    font-size: 1rem;
+}
 nav a {
     color: rgb(36, 53, 79);
     text-decoration: none;
     padding: 10px 15px;
+
     margin: 0;
     font-weight: bold;
     position: relative;
@@ -67,9 +130,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(211, 216, 221, 0.6); 
-    transform: scale(1.05); 
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    
+    transform: scale(1.10); 
     color: rgb(53,96,147)
 }
 
