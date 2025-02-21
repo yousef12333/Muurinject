@@ -1,18 +1,27 @@
 <footer>
     <div id="footerTop">
         <div id="footerLogo">
-            <a routerLink="/" id="linkImg" href="#header">
+            <a routerLink="/" id="linkImg" data-value="" (click)="regularNavigate($event)">
                 <img src="Muurinject_Logo.png" alt="Muurinject_Logo" />
             </a>
         </div>
-        <div id="footerContact">
-            <app-square title="Onze gegevens">
+        <div id="footerCompanyDescription">
+            <app-square title="Muurinject - Specialist in vochtbestrijding">
                 <div class="content-container">
-                    <ul id="ulContact">
-                        <li><a href="https://www.google.com/maps?q=de+Robianostraat+51,+2018+Antwerpen" target="_blank"><i class="bi bi-geo-alt"></i> de Robianostraat 11, 2150 Borsbeek</a></li>
-                        <li><a href="tel:+32471625028"><i class="bi bi-telephone"></i> +32471625028</a></li>
-                        <li><a href="mailto:Elias_bouki@hotmail.com"><i class="bi bi-envelope"></i> Elias_bouki&#64;hotmail.com</a></li>
-                        <li><i class="bi bi-file-earmark-text"></i>BE0715736769, RPR Antwerpen</li>
+                    <ul id="ulContent">
+                        <h5>Met onze expertise in muurinjectie bieden wij een effectieve oplossing voor opstijgend vocht. Onze methode vormt een barrière tegen vocht, voorkomt schimmel en beschermt de integriteit van uw muren.</h5>
+                    </ul>
+                </div>
+            </app-square>
+        </div>
+        <div id="footerContact">
+            <app-square title="Contacteer ons">
+                <div class="content-container">
+                    <ul id="ulContent">
+                        <li><a href="https://www.google.com/maps?q=de+Robianostraat+51,+2018+Antwerpen" target="_blank"><i class="bi bi-geo-alt-fill"></i> de Robianostraat 11, 2150 Borsbeek</a></li>
+                        <li><a href="tel:+32471625028"><i class="bi bi-telephone-fill"></i> +32 471 62 50 28</a></li>
+                        <li><a href="mailto:Muurinject@gmail.com"><i class="bi bi-envelope-fill"></i>Muurinject&#64;gmail.com</a></li>
+                        <li><i class="bi bi-file-earmark-text-fill"></i>BE0715736769, RPR Antwerpen</li>
                     </ul>
                 </div>
             </app-square>
@@ -21,13 +30,11 @@
         <div id="footerServices">
         <app-square title="Onze diensten">
             <div class="content-container">
-                <ul id="ulContact">
-                    <li><a class="button" href="#"><i class="bi bi-caret-right"></i> Opstijgend vocht</a></li>
-                    <li><a class="button" href="#"><i class="bi bi-caret-right"></i> Condensatie- & schimmel bestrijding</a></li>
-                    <li><a class="button" href="#"><i class="bi bi-caret-right"></i> Vochtige kelder</a></li>
-                    <li><a class="button" href="#"><i class="bi bi-caret-right"></i> Doorslaand vocht</a></li>
-                    <li><a class="button" href="#"><i class="bi bi-caret-right"></i> Tips & advies</a></li>
-                    <li><a class="button" href="#"><i class="bi bi-caret-right"></i> Over ons</a></li>
+                <ul id="ulContent" (click)="regularNavigate($event)">
+                    <li><a class="button" data-value="wall-inject"><i class="bi bi-caret-right-fill"></i> Muur injecteren</a></li>
+                    <li><a class="button" data-value="cellar-treatment"><i class="bi bi-caret-right-fill"></i> Kelderbehandeling</a></li>
+                    <li><a class="button" data-value="wall-impregnation"><i class="bi bi-caret-right-fill"></i> Muren impregneren</a></li>
+                    <li><a class="button" data-value="damp-proofing"><i class="bi bi-caret-right-fill"></i> Condens- en schimmelbestrijding</a></li>
                 </ul>
             </div>
         </app-square>

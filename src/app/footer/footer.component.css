@@ -4,18 +4,12 @@ footer {
 
 #footerTop {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
     column-gap: 2rem;
     height: auto;
-    padding: 3rem;
-}
-
-#footerContact {
-    display: flex;
-    align-items: start;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    padding: 3vw 9vw 0vw 9vw;
+    margin-bottom: 0;
 }
 
 #footerLogo {
@@ -25,11 +19,22 @@ footer {
     grid-row: 1 / 2;
   
 }
-
+#footerCompanyDescription{
+    display: flex;
+    justify-content: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+#footerContact {
+    display: flex;
+    align-items: start;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
 #footerServices {
     display: flex;
     flex-direction: column;
-    grid-column: 3 / 4;
+    grid-column: 4 / 5;
     grid-row: 1 / 2;
 }
 
@@ -47,8 +52,8 @@ li {
     list-style-type: none;
     text-decoration: none;
     margin-top: 0.5em;
-    color: rgb(7, 87, 159);
-    font-weight: bold;
+    color: rgb(36,53,79);
+    font-size:1.1rem;
 }
 
 img {
@@ -58,32 +63,41 @@ img {
 
 li > a {
     text-decoration: none;
-    color: rgb(7, 87, 159);
-    font-weight: bold;
+    color: rgb(36,53,79);
     display: flex;
+    font-size:1.1rem;
+   
     
 }
 li>a:hover{
-    color: rgb(255, 93, 98);
+    color: rgb(53,96,147);
     cursor: pointer;
 
 }
 i {
-    color: rgb(255, 93, 98);
+   position: relative;
+    color: rgb(12, 35, 180);
     font-size: 1.2em;
     margin-right: 0.3em;
     font-weight: bold;
+    top: -0.1rem;
 }
-
+.bi-caret-right-fill{
+    top: -0.2rem;
+    position: relative;
+}
 h2 {
-    color: rgb(255, 93, 98);
+    color: rgb(36,53,79);
     font-weight: bold;
 }
-ul#ulContact {
+ul#ulContent {
     margin-left: -2.5rem;
 }
-#ulContact>li>a{
+#ulContent>li>a{
     justify-content: left;
+}
+#ulContent>h5{
+    font-size:1.1rem;
 }
 @media (max-width: 900px) {
     #footerTop {
@@ -122,7 +136,7 @@ ul#ulContact {
         text-align: center;
     }
 
-    #ulContact, #ulServices {
+    #ulContent {
         text-align: center;
     }
 

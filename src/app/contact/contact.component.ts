@@ -13,16 +13,16 @@ import * as L from 'leaflet';
 })
 export class ContactComponent {
   ngOnInit(): void{
-    var map = L.map('map').setView([51.2019702, 4.3908187], 15);
+    var map = L.map('map').setView([51.1949081, 4.4784433], 15);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
-  var marker = L.marker([51.2019702, 4.3908187]).addTo(map);
-  var title = L.marker([51.2019702, 4.3908187], {
+  var marker = L.marker([51.1949081, 4.4784433]).addTo(map);
+  var title = L.marker([51.1949081, 4.4784433], {
     icon: L.divIcon({
         className: 'text-below-marker',
-        html: "Muurprotect",
+        html: "Muurinject",
         iconSize: [400, 40],
         iconAnchor: [30, 2] 
     })
