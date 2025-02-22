@@ -82,6 +82,28 @@ i {
     font-weight: bold;
     top: -0.1rem;
 }
+.social-links {
+    display: flex;
+    gap: 15px; 
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+.social-links i {
+    font-size: 20px;
+}
 .bi-caret-right-fill{
     top: -0.2rem;
     position: relative;

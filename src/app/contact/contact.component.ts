@@ -3,11 +3,12 @@ import { PageBannerComponent } from "../page-banner/page-banner.component";
 import { FooterComponent } from "../footer/footer.component";
 import { SquareComponent } from "../square/square.component";
 import * as L from 'leaflet';
+import { RegularSquareComponent } from "../regular-square/regular-square.component";
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [SquareComponent, PageBannerComponent, FooterComponent],
+  imports: [SquareComponent, PageBannerComponent, FooterComponent, RegularSquareComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
