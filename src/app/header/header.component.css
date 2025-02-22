@@ -3,7 +3,9 @@ img {
     cursor: pointer;
     margin: 0.5em 0.5em 0.5em 0.8em;
 }
-
+.coverAll{
+    border-bottom: 1px gainsboro solid;
+}
 #headerTop, #headerBottom{
     padding-left: 9vw;
     padding-right: 9vw;

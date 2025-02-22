@@ -15,6 +15,15 @@
 .appSquare{
     max-height: 5rem;
 }
+.glass-effect {
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(2.2px); 
+  -webkit-backdrop-filter: blur(2.2px); 
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  display: inline-block;
+  width:100%;
+}
 .button:hover{
     cursor: pointer;
     transition: background-color 0.3s ease, width 0.3s ease; 
@@ -89,7 +98,7 @@
   color: rgb(7, 87, 159);
 }
 .inbetween{
-  
+  background-image: url(../../../public/Transparant_Wall.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,7 +113,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(236, 236, 236, 0.86);
+  background-color: rgba(58, 105, 163, 0.395);
   z-index: 1; 
 }
 
@@ -112,90 +121,83 @@
   position: relative; 
   z-index: 2; 
 }
-swiper-container{
-  margin-bottom: 5rem;
-}
-.carousel {
-  width: 100%;
-  height: 100%;
-  padding: 5rem 36vw 2rem 36vw;
-  position: relative;
+.inbetween-content {
+  max-width: 80%;
+  margin: 0 auto;
+  color: white;
+  text-align: left;
+  padding: 3vw 0;
 }
 
+.company-name {
+  font-size: 3vw;
+  font-weight: 700;
+  color: rgb(36, 53, 79);
+}
 
-.swiper-slide {
+.inbetween-content h2 {
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.inbetween-content p {
+  font-size: 1.2vw;
+  max-width: 600px;
+}
+
+.vocht-info {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  padding: 1rem;
-  transition: transform 0.3s ease-in-out;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+.listStyle {
+  list-style-type: disclosure-closed;
+  left: -1.4rem;
 }
 
-
-
-.swiper-pagination-bullet {
-  background-color: rgb(7, 87, 159);
+.listStyle::marker {
+  color: rgb(12, 35, 180);
 }
 
-.slide-content {
+.listStyle strong {
+  color: white; 
+}
+.vocht-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 11rem; 
+  height: auto; 
+  border: solid 1px white;
   text-align: center;
-  height: 1fr;
-  padding: 10px;
-  background-color: white;
-  transition: box-shadow 0.3s ease;
 }
 
-.slide-content:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+.surround-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.slide-image {
-  width: 15vh;
-  height: auto;
-  max-height: 10rem;
-  max-width: 5rem;
-}
-#underlineTitle{
-  display:flex;
-  background-color: rgb(7, 87, 159);
-  height: 0.3rem;
-  width: 2rem;
-  align-content: center;
-  margin: 0.6rem;
-}
-.slide-button {
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: rgb(7, 87, 159);
-  color: rgb(255, 93, 98);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-bottom: 2rem;
-  font-weight: 500;
+.vocht-item i {
+  font-size: 2.6rem;
+  color: rgb(12, 35, 180);
+  margin-bottom: 0.5rem;
 }
 
-.slide-button:hover {
-  background-color: rgb(255, 93, 98);
-  color: rgb(7, 87, 159);;
+.vocht-item span {
+  font-size: 0.9rem;
+  color: white;
+  margin-left:0.6rem;
+  margin-right:0.6rem;
+  margin-bottom:0.6rem;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: rgb(7, 87, 159);
+.vocht-item span strong {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: -0.9rem;
 }
 
-.swiper-pagination {
-  color: rgb(7, 87, 159);
-}
-@media (max-width: 1500px) {
-  .carousel{
-    padding: 5rem 30vw 2rem 30vw;
-  }
-}
 @media (max-width: 900px) {
 
 
@@ -226,10 +228,6 @@ swiper-container{
     background-size: 115% 70%;
   }
 
-  .carousel {
-    padding: 5rem 10vw 2rem 10vw;
-  }
-
 }
 @media(max-width:700px){
   .titleName {
@@ -247,12 +245,7 @@ swiper-container{
 
 @media(max-width:400px){
 
-  p.slide-text{
-      font-size: 4vw;
-  }
-  .slider-title{
-    font-size:8vw;
-  }
+  
   .titleName{
     font-size: 10vw;
     top:2rem;
